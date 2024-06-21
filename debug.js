@@ -22,13 +22,14 @@ const storeOwners = [
   ];
   
   const listNumberOfStores = function () {
-    for (let i = 0; i < storeOwners[i].length; i++) {
-      let totalLocations = totalLocations + storeOwners.stores;
+    let totalLocations = 0;
+    for (let i = 0; i < storeOwners.length; i++) {
+        totalLocations += storeOwners[i].stores;
     }
-    return i;
+    return totalLocations;
   };
   
-  let locations = listNumberOfStores;
+  let locations = listNumberOfStores();
   
   function tellMeMyStores() {
     console.log('Hey, can you tell me how many stores you have?');
