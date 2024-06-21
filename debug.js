@@ -6,7 +6,7 @@ const storeOwners = [
     },
     {
       name: 'sally',
-      stores: 1,
+      stores: 2,
       location: "NM",
     },
     {
@@ -16,7 +16,7 @@ const storeOwners = [
     },
     {
       name: 'Danny Chavez',
-      stores: 1,
+      stores: 3,
       location: "NM",
     },
   ];
@@ -42,7 +42,8 @@ const storeOwners = [
     for (let i = 0; i < storeOwners.length; i++) {
       let person = storeOwners[i].name;
       let location = storeOwners[i].location;
-      console.log(`Yes, ${person} has one in ${location}`);
+      let stores = storeOwners[i].stores;
+      console.log(`Yes, ${person} has ${stores} in ${location}`);
     }
   
   }
